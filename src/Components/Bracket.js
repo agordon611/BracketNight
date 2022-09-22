@@ -6,7 +6,7 @@ function Bracket() {
         <>
         <div className="bracket">
             <div className="round1">
-                <Round></Round>
+                <Round team={["Pong", "Stack Cup"]}></Round>
                 <Round></Round>
                 <Round></Round>
                 <Round></Round>
