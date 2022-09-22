@@ -1,0 +1,13 @@
+.team {
+    width: 150px;
+    height: 30px;
+    background-color: gray;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}

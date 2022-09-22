@@ -1,0 +1,22 @@
+.bracket {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: animateIn 1s;
+}
+
+@keyframes animateIn {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.semis {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;    
+}
