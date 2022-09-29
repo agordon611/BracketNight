@@ -15,10 +15,16 @@ function App() {
       <Bracket />
       <Popup open={open} onClose={closeModal}>
         <div className="modal">
-          <a className="close" onClick={closeModal}>
+          <button className="close" onClick={closeModal}>
             &times;
-          </a>
-          Bracket Night
+          </button>
+          <h1>Welcome to Bracket Night</h1>
+          <p>
+          In this game, you are given 8 items in a particular category.
+          Today's theme is Drinking Games. Talk with your friends
+          (or by yourself if you have none) about which drinking game
+          should be crowned the best! Have fun! 
+          </p>
         </div>
       </Popup>
     </div>

@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.close {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -20px;
+  left: -20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.close:hover {
+  background-color: gray;
+}
+
 @keyframes anvil {
   0% {
     transform: scale(1) translateY(0px);
@@ -21,9 +36,15 @@
 }
 .popup-content {
   animation: anvil 1s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
-  width: 50%;
-  height: 50%;
+  width: 300px;
+  height: auto;
   background-color: aliceblue;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
