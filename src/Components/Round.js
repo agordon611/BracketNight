@@ -19,6 +19,14 @@ function Round(props) {
         if (props.roundNumber === 4) {
             document.getElementsByClassName('semis')[0].children[1].children[1].innerHTML = props.team[0];
         }
+
+        if (props.roundNumber === 5) {
+            document.getElementsByClassName('finals')[0].children[0].children[0].innerHTML = document.getElementsByClassName('semis')[0].children[0].children[0].innerHTML;
+        }
+
+        if (props.roundNumber === 6) {
+            document.getElementsByClassName('finals')[0].children[0].children[1].innerHTML = document.getElementsByClassName('semis')[0].children[1].children[0].innerHTML;
+        }
     }
 
     function handleBottomClick(event) {
@@ -37,6 +45,14 @@ function Round(props) {
 
         if (props.roundNumber === 4) {
             document.getElementsByClassName('semis')[0].children[1].children[1].innerHTML = props.team[1];
+        }
+
+        if (props.roundNumber === 5) {
+            document.getElementsByClassName('finals')[0].children[0].children[0].innerHTML = document.getElementsByClassName('semis')[0].children[0].children[1].innerHTML;
+        }
+
+        if (props.roundNumber === 6) {
+            document.getElementsByClassName('finals')[0].children[0].children[1].innerHTML = document.getElementsByClassName('semis')[0].children[1].children[1].innerHTML;
         }
 
     }
