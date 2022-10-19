@@ -35,8 +35,8 @@ function App() {
           <h1>Welcome to Bracket Night</h1>
           <p>
           In this game, you are given 8 items in a particular category.
-          Today's theme is Drinking Games. Talk with your friends
-          (or by yourself if you have none) about which drinking game
+          Today's theme is Pasta. Talk with your friends
+          (or by yourself if you have none) about which pasta
           should be crowned the best! Have fun! 
           </p>
         </div>

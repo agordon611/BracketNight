@@ -12,10 +12,10 @@ function Bracket() {
         
         <div className="bracket">
             <div className="round1">
-                <Round team={["Pong", "Stack Cup"]} roundNumber={1}></Round>
-                <Round team={["King's Cup", "Civil War"]} roundNumber={2}></Round>
-                <Round team={["Baseball", "Chandelier"]} roundNumber={3}></Round>
-                <Round team={["Die", "Ride the Bus"]} roundNumber={4}></Round>
+                <Round team={["Spaghetti", "Elbows"]} roundNumber={1}></Round>
+                <Round team={["Fettucini", "Ribbons"]} roundNumber={2}></Round>
+                <Round team={["Shells", "Ziti"]} roundNumber={3}></Round>
+                <Round team={["Angel Hair", "Bow Tie"]} roundNumber={4}></Round>
             </div>
             
             <div className="semis">
