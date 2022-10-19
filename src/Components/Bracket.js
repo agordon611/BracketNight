@@ -4,6 +4,12 @@ import "./Bracket.css";
 function Bracket() {
     return (
         <>
+        <div className="headings">
+            <h2 className="round1 heading">Round 1</h2>
+            <h2 className="semis heading">Semi-Finals</h2>
+            <h2 className="finals heading">Finals</h2>
+        </div>
+        
         <div className="bracket">
             <div className="round1">
                 <Round team={["Pong", "Stack Cup"]} roundNumber={1}></Round>

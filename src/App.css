@@ -40,6 +40,7 @@
   height: auto;
   background-color: aliceblue;
   padding: 5px;
+  border-radius: 5px;
 }
 
 h1 {
