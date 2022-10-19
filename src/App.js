@@ -2,12 +2,26 @@ import './App.css';
 import Bracket from "./Components/Bracket.js";
 import Navbar from "./Components/Navbar.js";
 import Popup from 'reactjs-popup';
-import {useState} from 'react';
+import { useState, useEffect } from 'react';
+import {db} from "./firebase";
+import { ref, onValue, set } from "firebase/database";
+import { uid } from "uid";
 
 function App() {
 
   const [open, setOpen] = useState(true);
+  const [topics, setTopics] = useState();
   const closeModal = () => setOpen(false);
+
+  // Read Data
+  useEffect(() => {
+    onValue(ref(db), (snapshot) => {
+      const data = snapshot.val();
+      if (data !== null) {
+        setTopics(data);
+      }
+    });
+  }, []);
 
   return (
     <div className="App">
