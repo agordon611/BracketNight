@@ -8,6 +8,7 @@ function Bracket() {
             <h2 className="round1 heading">Round 1</h2>
             <h2 className="semis heading">Semi-Finals</h2>
             <h2 className="finals heading">Finals</h2>
+            <h2 className="winner heading">Winner</h2>
         </div>
         
         <div className="bracket">
@@ -25,6 +26,10 @@ function Bracket() {
             
             <div className="finals">
                 <Round roundNumber={7}></Round>
+            </div>
+
+            <div className="winner">
+                <div className="team"></div>
             </div>
         </div>
         </>
