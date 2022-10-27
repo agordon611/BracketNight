@@ -1,0 +1,19 @@
+{
+  "data": {
+    "categories": [
+      {
+        "title" : "numbers",
+        "intro" : "img",
+        "teams" : {
+          "team1" : {"img":"", "title":"1"},
+          "team2" : {"img":"", "title":"1"}
+        }
+      },
+      {
+        "title" : "pasta",
+        "intro": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600"
+      }
+    ],
+    "pointer": 1
+  }
+}

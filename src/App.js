@@ -3,9 +3,10 @@ import Bracket from "./Components/Bracket.js";
 import Navbar from "./Components/Navbar.js";
 import Popup from 'reactjs-popup';
 import { useState, useEffect } from 'react';
-import {db} from "./firebase";
-import { ref, onValue, set } from "firebase/database";
-import { uid } from "uid";
+import axios from "axios";
+// import {db} from "./firebase";
+// import { ref, onValue, set } from "firebase/database";
+// import { uid } from "uid";
 
 function App() {
 
@@ -22,14 +23,24 @@ function App() {
   }
   
 
-  // Read Data
+  // Read Data using Firebase
+  // useEffect(() => {
+  //   onValue(ref(db), (snapshot) => {
+  //     const db_data = snapshot.val();
+  //     if (db_data !== null) {
+  //       setData(db_data);
+  //     }
+  //   });
+  // }, []);
+
+  // Read data using Axios
   useEffect(() => {
-    onValue(ref(db), (snapshot) => {
-      const db_data = snapshot.val();
-      if (db_data !== null) {
-        setData(db_data);
-      }
-    });
+    axios.get("data.json")
+      .then((response) => {
+        console.log(response);
+        setData(response.data);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   // console.log(data['data']['categories']['pasta']['intro']['image']);
@@ -45,7 +56,7 @@ function App() {
               &times;
             </button>
             <h1>Welcome to Bracket Night</h1>
-            <img src={data['data']['categories']['pasta']['intro']['image']} alt="pasta" width="100" height="100"></img>
+            <img src={data['data']['categories'][1]['intro']} alt={data['data']['categories'][1]['title']} width="100" height="100"></img>
             <p>
             In this game, you are given 8 items in a particular category.
             Today's theme is Pasta. Talk with your friends
@@ -59,7 +70,7 @@ function App() {
             <button className="close" onClick={closeTeam1Modal}>
               &times;
             </button>
-            <h1>Team 1</h1>
+            <h1>Hello</h1>
             
           </div>
         </Popup>
