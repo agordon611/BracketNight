@@ -40,14 +40,20 @@
   height: auto;
   background-color: aliceblue;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 h1 {
   text-align: center;
-  margin: 0;
+  margin: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
 }
