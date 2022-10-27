@@ -26,11 +26,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 15px;
   animation: animateIn 1s;
 }
 
 .heading {
   color: white;
   width: 162px;
+  margin: 10px;
+}
+
+.winner {
+  margin: 10px;
 }
