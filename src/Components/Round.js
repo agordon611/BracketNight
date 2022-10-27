@@ -6,26 +6,36 @@ function Round(props) {
 
         if (props.roundNumber === 1) {
             document.getElementsByClassName('semis')[1].children[0].children[0].innerHTML = props.team[0];
+            document.getElementsByClassName('finals')[1].children[0].children[0].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 2) {
             document.getElementsByClassName('semis')[1].children[0].children[1].innerHTML = props.team[0];
+            document.getElementsByClassName('finals')[1].children[0].children[0].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 3) {
             document.getElementsByClassName('semis')[1].children[1].children[0].innerHTML = props.team[0];
+            document.getElementsByClassName('finals')[1].children[0].children[1].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 4) {
             document.getElementsByClassName('semis')[1].children[1].children[1].innerHTML = props.team[0];
+            document.getElementsByClassName('finals')[1].children[0].children[1].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 5) {
             document.getElementsByClassName('finals')[1].children[0].children[0].innerHTML = document.getElementsByClassName('semis')[1].children[0].children[0].innerHTML;
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 6) {
             document.getElementsByClassName('finals')[1].children[0].children[1].innerHTML = document.getElementsByClassName('semis')[1].children[1].children[0].innerHTML;
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 7) {
@@ -37,26 +47,36 @@ function Round(props) {
 
         if (props.roundNumber === 1) {
             document.getElementsByClassName('semis')[1].children[0].children[0].innerHTML = props.team[1];
+            document.getElementsByClassName('finals')[1].children[0].children[0].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 2) {
             document.getElementsByClassName('semis')[1].children[0].children[1].innerHTML = props.team[1];
+            document.getElementsByClassName('finals')[1].children[0].children[0].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 3) {
             document.getElementsByClassName('semis')[1].children[1].children[0].innerHTML = props.team[1];
+            document.getElementsByClassName('finals')[1].children[0].children[1].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 4) {
             document.getElementsByClassName('semis')[1].children[1].children[1].innerHTML = props.team[1];
+            document.getElementsByClassName('finals')[1].children[0].children[1].innerHTML = "";
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 5) {
             document.getElementsByClassName('finals')[1].children[0].children[0].innerHTML = document.getElementsByClassName('semis')[1].children[0].children[1].innerHTML;
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 6) {
             document.getElementsByClassName('finals')[1].children[0].children[1].innerHTML = document.getElementsByClassName('semis')[1].children[1].children[1].innerHTML;
+            document.getElementsByClassName('winner')[1].children[0].innerHTML = "";
         }
 
         if (props.roundNumber === 7) {
